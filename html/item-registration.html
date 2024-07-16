@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Item</title>
+  <link rel="stylesheet" href="/projects/js-api-app/css/homepage.css">
+  <script src="/projects/js-api-app/js/item-registration.js" async defer></script>
+</head>
+<body>
+  <button><span id="back-arrow">&larr;</span></button>
+  <div class="container">
+    <form id="register-item" class="form">
+      <h1>Register Item</h1>
+      <div class="form-field">
+        <label for="item-name">Item Name:</label>
+        <input type="text" name="item-name" id="item-name" autocomplete="off">
+        <small></small>
+      </div>
+      <div class="form-field">
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" autocomplete="off">
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <label for="category">Category:</label>
+        <select name="category" id="category">
+          <option value="Electronics">Electronics</option>
+          <option value="Home Appliances">Home Appliances</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Clothing and Accessories">Clothing and Accessories</option>
+          <option value="Books and Media">Books and Media</option>
+          <option value="Sports and Outdoors">Sports and Outdoors</option>
+          <option value="Toys and Games">Toys and Games</option>
+          <option value="Tools and Home Improvement">Tools and Home Improvement</option>
+          <option value="Health and Beauty">Health and Beauty</option>
+          <option value="Food and Beverages">Food and Beverages</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <input type="submit" value="Register">
+      </div>
+      
+    </form>
+  </div>
+
+</body>
+</html>

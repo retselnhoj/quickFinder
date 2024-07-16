@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #94f38d;
+  }
+  h1 {
+    color: #000;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #10c689;
+    color: white;
+    padding: 10px 20px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .navbar .user-info {
+    display: flex;
+    align-items: center;
+  }
+  .homepage-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .search-bar {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(206, 206, 239);
+  }
+  .search-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: orange;
+  }
+  .action-buttons {
+    margin-top: 20px;
+  }
+  .register-item-btn,
+  .talk-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: orange;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(97, 97, 196);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgb(138, 138, 235);
+  }
+  .menu a,
+  .menu button {
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .menu a:hover,
+  .menu button:hover {
+    background-color: orange;
+  }
+  .hamburger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+  }
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .menu.active {
+    display: flex;
+  }
+  .back-arrow {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .category-container {
+    margin-top: 20px;
+  }
+  .category-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .item-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .item {
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  .item-details {
+    margin-top: 10px;
+  }
+  
+  /* Item Registration Page styling*/
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  .form-field {
+    margin-bottom: 20px;
+  }
+  .form-field input,
+  .form-field select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(206, 206, 239);
+  }
+  .form-field small {
+    color: red;
+  }
+  .form-field input[value="Register"] {
+    background-color: orange;
+  }
+  

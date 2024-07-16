@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/projects/js-api-app/css/homepage.css">
+  <script src="/projects/js-api-app/js/homepage.js" async defer></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="user-info">
+      <span id="user-role">Guest</span>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </div>
+  
+  <div class="menu" id="menu">
+    <button onclick="toggleMenu()"><span class="back-arrow">&larr;</span></button>
+    <a href="#" onclick="filterItems('Electronics')">Electronics</a>
+    <a href="#" onclick="filterItems('Home Appliances')">Home Appliances</a>
+    <a href="#" onclick="filterItems('Furniture')">Furniture</a>
+    <a href="#" onclick="filterItems('Clothing and Accessories')">Clothing and Accessories</a>
+    <a href="#" onclick="filterItems('Books and Media')">Books and Media</a>
+    <a href="#" onclick="filterItems('Sports and Outdoors')">Sports and Outdoors</a>
+    <a href="#" onclick="filterItems('Toys and Games')">Toys and Games</a>
+    <a href="#" onclick="filterItems('Tools and Home Improvement')">Tools and Home Improvement</a>
+    <a href="#" onclick="filterItems('Health and Beauty')">Health and Beauty</a>
+    <a href="#" onclick="filterItems('Food and Beverages')">Food and Beverages</a>
+  </div>
+
+  <div class="homepage-container">
+    <h1>Welcome to QuickFinder</h1>
+    <div>
+      <input type="text" class="search-bar" placeholder="Search for items..." id="search-bar">
+      <button class="search-btn" onclick="searchItems()">Search</button>
+    </div>
+    <div class="action-buttons">
+      <button class="talk-btn" id="search-button" onclick="startSpeechRecognition()">Talk</button>
+      <button class="register-item-btn">Register an Item</button>
+    </div>
+
+    <!-- Categories and items container -->
+    <div class="category-container" id="category-container">
+      <!-- Items will be dynamically added here -->
+    </div>
+
+    <!-- Item details container -->
+    <div class="item-details" id="item-details">
+      <!-- Item details will be displayed here -->
+    </div>
+  </div>
+
+</body>
+</html>
