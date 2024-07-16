@@ -1,5 +1,5 @@
 document.querySelector(".register-item-btn").addEventListener("click", () => {
-  window.location.href = "html/item-registration.html";
+  window.location.href = "/html/item-registration.html";
 });
 
 function toggleMenu() {
@@ -82,7 +82,7 @@ function startSpeechRecognition() {
 // Function to logout
 function logout() {
   sessionStorage.removeItem("role");
-  window.location.href = "index.html";
+  window.location.href = "/index.html";
 }
 
 // Set user role in navbar

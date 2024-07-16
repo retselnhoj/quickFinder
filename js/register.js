@@ -99,7 +99,7 @@ form.addEventListener("submit", function (e) {
     users.push(user);
     sessionStorage.setItem("users", JSON.stringify(users)); // convert a JavaScript object or value to a JSON string
     alert("Registration Successful!");
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
   }
 });
 

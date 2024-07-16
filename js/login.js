@@ -99,10 +99,10 @@ form.addEventListener(
 
 parentBtn.addEventListener("click", () => {
   sessionStorage.setItem("role", "parent");
-  window.location.href = "html/homepage.html";
+  window.location.href = "/html/homepage.html";
 });
 
 kidBtn.addEventListener("click", () => {
   sessionStorage.setItem("role", "kid");
-  window.location.href = "html/homepage.html";
+  window.location.href = "/html/homepage.html";
 });

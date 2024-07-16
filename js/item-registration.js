@@ -4,7 +4,7 @@ const backButton = document
   .addEventListener("click", goBackHomepage);
 
 function goBackHomepage() {
-  window.location.href = "html/homepage.html";
+  window.location.href = "/html/homepage.html";
 }
 
 form.addEventListener("submit", async function (e) {
@@ -21,7 +21,7 @@ form.addEventListener("submit", async function (e) {
       sessionStorage.setItem("items", JSON.stringify(items));
       alert("Item registered successfully!");
       form.reset();
-      window.location.href = "html/homepage.html";
+      window.location.href = "/html/homepage.html";
     } catch (error) {
       alert("Failed to generate QR code.");
       console.error("Error fetching QR code:", error);
